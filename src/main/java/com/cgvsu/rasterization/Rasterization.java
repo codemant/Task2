@@ -9,12 +9,11 @@ public class Rasterization {
 
 
     public static void drawLine(
-            final GraphicsContext graphicsContext,
+            final PixelWriter pixelWriter,
             final int startX, final int startY,
             final int endX, final int endY,
             final Color startColor, final Color endColor) {
 
-        final PixelWriter pixelWriter = graphicsContext.getPixelWriter();
         List<int[]> points = Algoritm.computeLine(startX, startY, endX, endY);
         List<Color> colors = Algoritm.interpolateColors(startColor, endColor, points.size());
 

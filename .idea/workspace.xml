@@ -31,6 +31,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.RasterizationApplication.executor": "Run",
+    "JUnit.ComputeLineTest.executor": "Run",
+    "JUnit.SimpleTest.executor": "Run",
+    "JUnit.interpolateColorsTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",

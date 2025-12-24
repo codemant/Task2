@@ -51,6 +51,15 @@ public class Algoritm {
     }
 
     public static List<Color> interpolateColors(Color startColor, Color endColor, int steps) {
+        if (steps <= 0) {
+            return new ArrayList<>();
+        }
+        if (steps == 1) {
+            List<Color> colors = new ArrayList<>();
+            colors.add(startColor);
+            return colors;
+        }
+
         List<Color> colors = new ArrayList<>();
 
         double r1 = startColor.getRed();

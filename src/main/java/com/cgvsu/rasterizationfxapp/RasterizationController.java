@@ -21,44 +21,35 @@ public class RasterizationController {
         anchorPane.prefHeightProperty().addListener((ov, oldValue, newValue) -> canvas.setHeight(newValue.doubleValue()));
 
 
-        /*
+
         Rasterization.drawLine(
-                canvas.getGraphicsContext2D(),
+                canvas.getGraphicsContext2D().getPixelWriter(),
                 50, 200, 500, 200,
                 Color.CYAN, Color.PINK
         );
 
-         */
 
         // Пологая линия, зелёная - жёлтая
 
-        /*
         Rasterization.drawLine(
-                canvas.getGraphicsContext2D(),
+                canvas.getGraphicsContext2D().getPixelWriter(),
                 100, 300, 400, 350,
                 Color.GREEN, Color.YELLOW
         );
 
         // Крутая линия, фиолетовая - оранжевая
         Rasterization.drawLine(
-                canvas.getGraphicsContext2D(),
+                canvas.getGraphicsContext2D().getPixelWriter(),
                 200, 50, 250, 300,
                 Color.MAGENTA, Color.ORANGE
         );
 
-         */
-
-
-
 
         Rasterization.drawLine(
-                canvas.getGraphicsContext2D(),
+                canvas.getGraphicsContext2D().getPixelWriter(),
                 50, 50, 400, 300,
                 Color.RED, Color.BLUE
         );
-
-
-
 
 
     }
